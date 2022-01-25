@@ -1,12 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# ToDo-List
+# Leaderboard
 
-> ### In this project, I built a simple To-Do App for managing the daily tasks and to keep track on tasks during the day.
-
-
-https://user-images.githubusercontent.com/45231276/149444798-1499d9c0-4ce7-42b1-bfe3-4f73752752aa.mp4
-
+> ### The leaderboard website displays scores submitted by different players. It also allows you to submit your score. All data is preserved thanks to the external Leaderboard API service. Build with Html, CSS, JS, API, and Webpack.
 
 ## Built With
 
@@ -17,20 +13,24 @@ https://user-images.githubusercontent.com/45231276/149444798-1499d9c0-4ce7-42b1-
 ## Additional Used
 
 - Webpack
+- API
+- ES6
 
 ## Live Demo
 
-[ToDo-list link](https://bondok6.github.io/ToDo-List/)
+[ToDo-list link](https://bondok6.github.io/Leaderboard/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
-`git clone git@github.com:Bondok6/ToDo-list.git`
+`git clone git@github.com:Bondok6/Leaderboard.git`
+
+Then `cd Leaderboard`
 
 Then `npm install` to install packages
 
-Finally `npm start`
+Finally `npm run start`
 
 ## Authors
 
