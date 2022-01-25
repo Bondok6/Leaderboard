@@ -10,7 +10,36 @@
   <script defer src="main.js"></script></head>
 
   <body>
-    <h1>Test</h1>
+
+    <header>
+      <h1>Leaderboard</h1>
+    </header>
+
+    <main>
+
+      <section class="recent-scores-section">
+
+        <div class="recent-info">
+          <h2>Recent Scores</h2>
+          <button type="button" class="btn">Refresh</button>
+        </div>
+
+        <ul class="recent-score-container"></ul>
+
+      </section>
+
+      <section class="add-score-section">
+        <h2>Add your score</h2>
+        <form id="form">
+          <input type="text" placeholder="Your Name" required>
+          <input type="number" placeholder="Your Score" required>
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
+
+    </main>
+
+
   </body>
 
 </html>
