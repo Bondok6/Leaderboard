@@ -78,7 +78,6 @@ header {
   margin-top: 3rem;
   height: 35rem;
   border: 3px solid #222;
-  padding-block: 1rem;
   overflow-y: scroll;
 }
 
@@ -101,6 +100,15 @@ header {
 
 .recent-score-container::-webkit-scrollbar-thumb:hover {
   background-color: #777;
+}
+
+.item {
+  padding: 1rem 2rem;
+  background-color: rgb(199, 199, 199);
+}
+
+.item:nth-of-type(2n) {
+  background-color: rgb(156, 156, 156);
 }
 
 main {

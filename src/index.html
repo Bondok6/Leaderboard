@@ -21,7 +21,7 @@
 
         <div class="recent-info">
           <h2>Recent Scores</h2>
-          <button type="button" class="btn">Refresh</button>
+          <button type="button" class="btn" id="refresh-btn">Refresh</button>
         </div>
 
         <ul class="recent-score-container"></ul>
@@ -31,8 +31,8 @@
       <section class="add-score-section">
         <h2>Add your score</h2>
         <form id="form">
-          <input type="text" placeholder="Your Name" required>
-          <input type="number" placeholder="Your Score" required>
+          <input type="text" placeholder="Your Name" id="name" required>
+          <input type="number" placeholder="Your Score" id="score" required>
           <button type="submit" class="btn">Submit</button>
         </form>
       </section>
