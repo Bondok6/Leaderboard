@@ -7,7 +7,7 @@ class Data {
   }
 
   static setStorage() {
-    localStorage.setItem("scores", JSON.stringify(this.scores));
+    localStorage.setItem('scores', JSON.stringify(this.scores));
   }
 }
 
