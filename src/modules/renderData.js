@@ -1,21 +1,14 @@
-import Data from './data.js';
+const render = (data) => {
+  const itemsContainer = document.querySelector(".recent-score-container");
 
-const render = () => {
-  const itemsContainer = document.querySelector('.recent-score-container');
+  let itemHtml = "";
 
-  if (JSON.parse(localStorage.getItem('scores'))) {
-    Data.scores = JSON.parse(localStorage.getItem('scores'));
-  }
-
-  let itemHtml = '';
-
-  Data.scores.forEach((item) => {
+  data.result.forEach((item) => {
     itemHtml += `
-    <li class="item">${item.name}: ${item.score}</li>
+    <li class="item">${item.user}: ${item.score}</li>
     `;
   });
-
-  itemsContainer.insertAdjacentHTML('beforeend', itemHtml);
+  itemsContainer.innerHTML = itemHtml;
 };
 
 export default render;
