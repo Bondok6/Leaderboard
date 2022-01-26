@@ -1,4 +1,4 @@
-import addItem from './addItem.js';
+import { postData } from './data.js';
 
 const formData = (e) => {
   e.preventDefault();
@@ -6,7 +6,17 @@ const formData = (e) => {
   const name = document.querySelector('#name').value;
   const score = document.querySelector('#score').value;
 
-  addItem(name, score);
+  const obj = {
+    user: name,
+    score,
+  };
+
+  postData(obj);
+
+  // Clear Inputs
+  document.querySelector('#name').value = '';
+  document.querySelector('#score').value = '';
+  document.querySelector('#name').focus();
 };
 
 export default formData;

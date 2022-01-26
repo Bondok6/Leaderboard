@@ -104,11 +104,10 @@ header {
 
 .item {
   padding: 1rem 2rem;
-  background-color: rgb(199, 199, 199);
 }
 
 .item:nth-of-type(2n) {
-  background-color: rgb(156, 156, 156);
+  background-color: rgb(199, 199, 199);
 }
 
 main {

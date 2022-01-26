@@ -1,14 +1,22 @@
-class Data {
-  static scores = [];
+import render from './renderData.js';
 
-  constructor(name, score) {
-    this.name = name;
-    this.score = score;
-  }
+const URL = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fTRZwg4ycDdSEmSCjp4P/scores';
 
-  static setStorage() {
-    localStorage.setItem('scores', JSON.stringify(this.scores));
-  }
-}
+const postData = async (data) => {
+  await fetch(URL, {
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
+};
 
-export default Data;
+const getData = async () => {
+  const res = await fetch(URL);
+  const data = await res.json();
+
+  render(data);
+};
+
+export { postData, getData };
