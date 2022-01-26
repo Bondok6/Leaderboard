@@ -1,7 +1,7 @@
 const render = (data) => {
-  const itemsContainer = document.querySelector(".recent-score-container");
+  const itemsContainer = document.querySelector('.recent-score-container');
 
-  let itemHtml = "";
+  let itemHtml = '';
 
   data.result.forEach((item) => {
     itemHtml += `
