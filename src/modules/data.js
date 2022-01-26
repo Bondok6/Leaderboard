@@ -3,8 +3,8 @@ import render from "./renderData";
 const URL =
   "https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/fTRZwg4ycDdSEmSCjp4P/scores";
 
-const postData = (data) => {
-  fetch(URL, {
+const postData = async (data) => {
+  await fetch(URL, {
     method: "POST",
     body: JSON.stringify(data),
     headers: {
@@ -13,12 +13,11 @@ const postData = (data) => {
   });
 };
 
-const getData = () => {
-  fetch(URL)
-    .then((res) => res.json())
-    .then((data) => {
-      render(data);
-    });
+const getData = async () => {
+  const res = await fetch(URL);
+  const data = await res.json();
+
+  render(data);
 };
 
 export { postData, getData };
