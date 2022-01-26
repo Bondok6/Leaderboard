@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[ToDo-list link](https://bondok6.github.io/Leaderboard/)
+[Leaderboard link](https://bondok6.github.io/Leaderboard/)
 
 ## Getting Started
 
