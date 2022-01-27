@@ -136,6 +136,32 @@ input {
   border-radius: 5px;
 }
 
+.status {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.error,
+.success {
+  width: fit-content;
+  padding: 1rem 2rem;
+  margin: 2rem auto 0;
+  font-size: 1.6rem;
+}
+
+.error {
+  color: #d8000c;
+  background-color: #ffd2d2;
+}
+
+.success {
+  color: #4f8a10;
+  background-color: #dff2bf;
+}
+
 @media screen and (max-width: 976px) {
   main {
     flex-direction: column-reverse;
