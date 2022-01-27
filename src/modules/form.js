@@ -13,6 +13,8 @@ const formData = (e) => {
 
   postData(obj);
 
+  document.querySelector('.success').classList.remove('hidden');
+
   // Clear Inputs
   document.querySelector('#name').value = '';
   document.querySelector('#score').value = '';

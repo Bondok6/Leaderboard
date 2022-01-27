@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="57011448dc08b9372b5e.css">
-    <title>Document</title>
+    <title>Leaderboard</title>
   <script defer src="main.js"></script></head>
 
   <body>
@@ -30,11 +30,19 @@
 
       <section class="add-score-section">
         <h2>Add your score</h2>
+
         <form id="form">
           <input type="text" placeholder="Your Name" id="name" required>
           <input type="number" placeholder="Your Score" id="score" required>
           <button type="submit" class="btn">Submit</button>
         </form>
+
+        <div class="status">
+          <div class="success hidden">
+            <span>✅ The score is added successfully</span>
+          </div>
+        </div>
+
       </section>
 
     </main>

@@ -16,6 +16,7 @@ const getData = async () => {
   const res = await fetch(URL);
   const data = await res.json();
 
+  document.querySelector('.success').classList.add('hidden');
   render(data);
 };
 
